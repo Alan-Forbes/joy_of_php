@@ -37,7 +37,6 @@ foreach ($cars as $car) {
     echo "<td>" . htmlspecialchars($car['Model']) . "</td>";
     echo "<td>" . htmlspecialchars($car['ASKING_PRICE']) . "</td>";
     echo "</tr>\n";
-
     $class = ($class == "odd") ? "even" : "odd";
 }
 
