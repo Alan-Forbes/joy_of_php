@@ -16,7 +16,7 @@ if ($result = $mysqli->query($query)) {
 }
 else
 {
-    echo "Error getting cars from the database: " . mysql_error()."<br>";
+    echo "Error getting cars from the database: " . mysqli_error($mysqli)."<br>";
 }
 
 // Create the table headers
