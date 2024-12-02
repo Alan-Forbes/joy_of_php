@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log in to Sam's Used Cars</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: url('bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .login-container {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 1.5em;
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      text-align: left;
+    }
+    input[type="text"], input[type="password"] {
+      width: calc(100% - 20px);
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1em;
+    }
+    input[type="submit"] {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+    .note {
+      font-size: 0.9em;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h1>Sam's Used Cars - Login</h1>
+    <form action="post_login.php" method="post">
+      <label for="myusername">Username:</label>
+      <input type="text" id="myusername" name="myusername" placeholder="Enter your username" required>
+      
+      <label for="mypassword">Password:</label>
+      <input type="password" id="mypassword" name="mypassword" placeholder="Enter your password" required>
+      
+      <input type="submit" value="Login">
+    </form>
+    <p class="note">Forgot your password? Contact support.</p>
+  </div>
+</body>
+</html>
